@@ -1,4 +1,4 @@
-# 已知豆瓣ID时，爬取影片信息
+# 已知豆瓣ID时，爬取影片基本信息
 # 把已知的豆瓣ID存到项目文件中的'dubanIDs.xlsx'文件中即可，程序运行时自动导入该文件
 # 此处仅以五个影片为例，在doubanID.xlsx文件中存了五个豆瓣ID
 import random
@@ -8,7 +8,7 @@ import requests #请求包
 import pandas as pd
 import json
 import time # 设置休眠时间，控制爬虫频率
-from threading import Thread   # 多线程  爬虫比较多
+from threading import Thread   
 
 User_Agents =[
     'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50',
